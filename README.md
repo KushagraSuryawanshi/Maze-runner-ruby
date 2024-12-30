@@ -64,3 +64,4 @@ To run the game on your system, follow these steps:
 ---
 
 Thank you for checking out my **Maze Runner Game**. This project marks an important milestone in my programming journey, where I learned a lot about both coding and game development.
+
