@@ -1,43 +1,78 @@
 # Maze Runner Game
 
-This is a maze runner game that I built as part of the **Intro to Programming** unit in my first semester, which started in February 2024. The project reflects my experience of coming up with an idea, learning to code in a new language (Ruby), and implementing that idea using the **Gosu** game development library—all on my own. It was a challenging yet rewarding experience, where I learned the importance of building something from scratch, figuring out the logic, and developing it in a language and library that were new to me at the time.
+Maze Runner is a 2D game developed as part of the **Intro to Programming** unit during my first semester, which started in February 2024. This project showcases my ability to independently learn new technologies, apply programming principles, and bring a concept to life using the **Ruby** programming language and the **Gosu** game development library. 
+
+From conceptualizing the idea to implementing mechanics and visuals, this game reflects my growth as a developer and my drive to take on challenges that push the boundaries of my knowledge and skills.
+
+---
 
 ## Features
 
-- **Player Movement:** The player controls a character that can move up, down, left, or right using the keyboard arrows.
-- **Walls:** There are walls in the maze that the player cannot pass through.
-- **Enemies:** Enemies randomly move around the maze based on difficulty (easy, medium, or hard).
-- **Coins:** Collect coins scattered around the maze to increase your score.
-- **Difficulty Levels:** The game allows you to choose between three difficulty levels (easy, medium, hard), each affecting the number of enemies.
-- **Game States:** The game includes a main menu, gameplay, and a game-over state.
-- **Graphics:** The game uses images for the player, enemies, walls, coins, and menu screen.
+- **Player Movement:**  
+  Control the player using keyboard arrow keys to navigate the maze. 
+- **Walls and Maze Layout:**  
+  The maze structure is defined using a grid, where players cannot pass through walls.
+- **Enemies:**  
+  Enemies dynamically move around based on the difficulty level selected (easy, medium, hard).  
+- **Coins:**  
+  Collect coins scattered across the maze to increase your score. 
+- **Difficulty Levels:**  
+  Choose between three difficulty levels, which affect the number and behavior of enemies.  
+- **Game States:**  
+  Seamless transitions between the main menu, gameplay, and the game-over screen.  
+- **Graphics:**  
+  Custom assets for player characters, enemies, walls, coins, and UI elements.
+- **Screenshots:**  
+  A visual representation of the gameplay at different stages:
+  - **Game Start (Choose Difficulty & Instructions):**  
+    ![Starting Screen](readme_images/img1.png)
+  - **Gameplay Screen (Maze Layout):**  
+    ![Gameplay Screen](readme_images/img2.png)
+  - **Game Over Screen:**  
+    ![Game Over Screen](readme_images/img3.png)
+
+---
 
 ## Technologies Used
 
-- **Gosu** - A Ruby library for making 2D games.
-- **Ruby** - The programming language used to create the game.
-- **Images** - Used for game objects like walls, coins, enemies, and the player.
+- **Ruby:**  
+  A flexible and beginner-friendly programming language.  
+- **Gosu:**  
+  A Ruby library for 2D game development, providing tools for graphics, sound, and input handling.  
+- **Image Assets:**  
+  Custom graphics for various game objects like walls, enemies, and the player.
+
+---
 
 ## Code Structure
 
-- **game_window.rb:** The main Ruby file where the game logic is implemented.
-- **Wall, Coin, Enemy, and Player Classes:** These classes represent the game objects with properties like position and image.
-- **Maze Layout:** The layout of the maze is defined in a 2D array, where `1` represents walls and `0` represents empty spaces.
-- **Game States:** The game has several states like the menu, playing, and game over, each with specific functionality.
+- **`game_window.rb`:**  
+  The main file containing the game loop and logic for rendering and interactions.  
+- **Classes:**  
+  - **Player Class:** Manages player attributes, controls, and movement.  
+  - **Enemy Class:** Handles enemy behavior and interaction with the maze.  
+  - **Wall Class:** Represents the solid walls in the maze.  
+  - **Coin Class:** Handles collectible coin behavior.  
+- **Maze Layout:**  
+  A 2D grid array defines the game environment. `1` represents walls, and `0` represents walkable paths.  
+- **Game States:**  
+  Includes logic for the main menu, gameplay, and game-over screen to ensure smooth transitions and flow.  
+
+---
 
 ## How to Run the Game
 
-To run the game on your system, follow these steps:
+To play Maze Runner on your local machine, follow these steps:
 
-1. **Install Ruby:**
-   - Ensure you have Ruby installed on your system. You can download it from [ruby-lang.org](https://www.ruby-lang.org).
-   - To verify, run the command:
+1. **Install Ruby:**  
+   - Download and install Ruby from [ruby-lang.org](https://www.ruby-lang.org).  
+   - Verify the installation by running:  
      ```bash
      ruby -v
      ```
 
-2. **Install the Gosu Library:**
-   - Install the Gosu gem using the following command:
+2. **Install the Gosu Library:**  
+   - Install the Gosu gem using the following command:  
      ```bash
      gem install gosu
      ```
@@ -51,9 +86,6 @@ To run the game on your system, follow these steps:
      ```bash
      ruby game_window.rb
      ```
-
-5. **Enjoy the Game:**
-   - The game window will open, and you can start playing!
 
 ## Challenges & Learning Experience
 
