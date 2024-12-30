@@ -25,7 +25,7 @@ From conceptualizing the idea to implementing mechanics and visuals, this game r
 - **Screenshots:**  
   A visual representation of the gameplay at different stages:
   - **Game Start (Choose Difficulty & Instructions):**  
-    ![Starting Screen](readme_images/img1.png)
+    ![Starting Screen](readme_images/img1.png){:width="500px"}
   - **Gameplay Screen (Maze Layout):**  
     ![Gameplay Screen](readme_images/img2.png)
   - **Game Over Screen:**  
