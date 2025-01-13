@@ -151,22 +151,22 @@ class GameWindow < Gosu::Window
     super 640, 480
     self.caption = "Maze Game"
     
-    @wall_image = Gosu::Image.new("wall.jpg")
+    @wall_image = Gosu::Image.new("./assets/wall.jpg")
     @walls = generate_walls
 
-    @coin_image = Gosu::Image.new("coin.jpg")
+    @coin_image = Gosu::Image.new("./assets/coin.jpg")
     @coins = generate_coins
 
-    @enemy_image = Gosu::Image.new("enemy.jpg")
+    @enemy_image = Gosu::Image.new("./assets/enemy.jpg")
     @enemies = generate_enemies("easy")
 
-    @player_image = Gosu::Image.new("player.jpg")
+    @player_image = Gosu::Image.new("./assets/player.jpg")
     @player = Player.new(20, 20, @player_image)
 
     @points = 0
     @font = Gosu::Font.new(20)
     
-    @menu_image = Gosu::Image.new("menu.jpg")
+    @menu_image = Gosu::Image.new("./assets/menu.jpg")
     @game_state = :menu
     @selected_difficulty = "easy"
     @difficulties = ["easy", "medium", "hard"]
